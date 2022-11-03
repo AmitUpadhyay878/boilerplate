@@ -1,10 +1,12 @@
 import React from 'react'
+import Routing from './routing';
 function App() {
   return (
-    <div className="App">
-      <h1 style={{margin:"300px",padding:"100px"}}>This is a Home Page</h1>
-    </div>
+    <Routing />
   );
 }
+
+
+
 
 export default App;
