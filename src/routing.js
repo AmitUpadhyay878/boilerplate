@@ -3,7 +3,9 @@ import { Route, Routes } from "react-router-dom";
 import Aboutus from "./Aboutus";
 import Home from "./Home";
 import Signin from "./Signin";
-import { aboutus, home, signin } from "./routerConst";
+import Contactus from "./Contactus";
+
+import { aboutus, contactus, home, signin } from "./routerConst";
 import Layout from "./Layout";
 
 const Routing = () => {
@@ -13,6 +15,7 @@ const Routing = () => {
         <Route path={home} index element={<Home />} exact />
         <Route path={aboutus} element={<Aboutus />} />
         <Route path={signin} element={<Signin />} />
+        <Route path={contactus} element={<Contactus />}/>
       </Routes>
     </Layout>
   );
