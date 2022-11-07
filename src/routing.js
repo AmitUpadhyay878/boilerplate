@@ -5,8 +5,9 @@ import Home from "./Home";
 import Signin from "./Signin";
 import Contactus from "./Contactus";
 
-import { aboutus, contactus, home, signin } from "./routerConst";
+import { aboutus, contactus, home, signin, withimage } from "./routerConst";
 import Layout from "./Layout";
+import Withimage from "./Withimage";
 
 const Routing = () => {
   return (
@@ -16,6 +17,7 @@ const Routing = () => {
         <Route path={aboutus} element={<Aboutus />} />
         <Route path={signin} element={<Signin />} />
         <Route path={contactus} element={<Contactus />}/>
+        <Route path={withimage} element={<Withimage />}/>
       </Routes>
     </Layout>
   );

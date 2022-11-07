@@ -1,6 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { aboutus, contactus, home, signin } from './routerConst'
+import { aboutus, contactus, home, signin, withimage } from './routerConst'
 
 const Header = () => {
 
@@ -13,6 +13,7 @@ const Header = () => {
                         <NavLink to={signin}style={style}>Sign In</NavLink>
                         <NavLink to={aboutus}style={style}>About Us</NavLink>
                         <NavLink to={contactus}style={style}>Contact Us</NavLink>
+                        <NavLink to={withimage} style={style}>With Image</NavLink>
                 </li>
             </ul>
     </div>
